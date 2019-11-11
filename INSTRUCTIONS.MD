@@ -40,7 +40,7 @@ Use the following CL commands to create the program (PGM) object called SAMPLERP
 
 ### Setup HTTP Server
 Use your browser to access the HTTP Server Configuration and Administration forms to create an Apache server named, 
-for example, RPGCONFIG.
+for example, RESTSERVER.
         
 * Set the document root to the /rpgdemo/html directory. 
 * Add a directory for the QSYS library allowing access to the directory and allowing CGI script execution, 
@@ -68,7 +68,7 @@ Under Tools, select Display Configuration File to make sure you have the followi
         </Directory>
 
 ### Start the Server
-Start the RPGCONFIG instance from the GUI.
+Start the RESTSERVER instance from the GUI.
 
 ### Run
 * From your browser type: http://yourservername:port/html/samplerpg.html .
