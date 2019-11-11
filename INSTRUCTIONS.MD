@@ -18,8 +18,8 @@ Download the following files contained in this repository:
 Use the following CL commands to create a directory structure: 
 * mkdir dir('/qsys.lib/rpgdemo.lib')
 * mkdir dir('/qsys.lib/rpgdemo.lib/qrpglesrc.file')
-* mkdir dir('/rpgdemo')
-* mkdir dir('/rpgdemo/html')
+* mkdir dir('/www/rpgdemo')
+* mkdir dir('/www/rpgdemo/html')
 
       Be aware the mkdir command will use  hierarchical file authorities, unless you specify otherwise, 
       for the \*PUBLIC users.  You may want to specifically add read and execute authorities for server 
