@@ -21,9 +21,9 @@ Use the following CL commands to create a directory structure:
 * mkdir dir('/rpgdemo')
 * mkdir dir('/rpgdemo/html')
 
-  Be aware the mkdir command will use  hierarchical file authorities, unless you specify otherwise, 
-  for the \*PUBLIC users.  You may want to specifically add read and execute authorities for server 
-  user profiles QTMHHTTP and QTMHHTP1 to these new directories.
+      Be aware the mkdir command will use  hierarchical file authorities, unless you specify otherwise, 
+      for the \*PUBLIC users.  You may want to specifically add read and execute authorities for server 
+      user profiles QTMHHTTP and QTMHHTP1 to these new directories.
 
 ### Upload
 Use FTP to connect to your server.
