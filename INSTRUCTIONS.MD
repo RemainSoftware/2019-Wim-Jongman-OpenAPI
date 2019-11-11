@@ -17,7 +17,7 @@ Download the following files contained in this repository:
 ### Create Directory Structure
 Use the following CL commands to create a directory structure: 
 * mkdir dir('/qsys.lib/rpgdemo.lib')
-* mkdir dir('/qsys.lib/rpgdemo.lib/qcsrc.file')
+* mkdir dir('/qsys.lib/rpgdemo.lib/qrpglesrc.file')
 * mkdir dir('/rpgdemo')
 * mkdir dir('/rpgdemo/html')
 
@@ -30,12 +30,12 @@ Use FTP to connect to your server.
 Use the following FTP commands to copy the files to your server: 
 
 * put samplerpg.html /rpgdemo/html/samplerpg.html
-* put samplerpg.txt  /qsys.lib/rpgdemo.lib/qcsrc.file/samplerpg.mbr
+* put samplerpg.txt  /qsys.lib/rpgdemo.lib/qrpglesrc.file/samplerpg.mbr
 
 ### Compile
 Use the following CL commands to create the program (PGM) object called SAMPLERPG: 
 
-* CRTRPGMOD MODULE(rpgdemo/samplerpg) SRCFILE(rpgdemo/qcsrc) SRCMBR(samplerpg) OUTPUT(*print)
+* CRTRPGMOD MODULE(rpgdemo/samplerpg) SRCFILE(rpgdemo/qrpglesrc) SRCMBR(samplerpg) OUTPUT(*print)
 * CRTPGM PGM(rpgdemo/samplerpg) MODULE(rpgdemo/samplerpg) BNDSRVPGM(qhttpsvr/qzhbcgi)
 
 ### Setup HTTP Server
