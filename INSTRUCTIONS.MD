@@ -29,7 +29,7 @@ Use the following CL commands to create a directory structure:
 Use FTP to connect to your server.
 Use the following FTP commands to copy the files to your server: 
 
-* put samplerpg.html /rpgdemo/html/samplerpg.html
+* put samplerpg.html /www/rpgdemo/html/samplerpg.html
 * put samplerpg.txt  /qsys.lib/rpgdemo.lib/qrpglesrc.file/samplerpg.mbr
 
 ### Compile
@@ -42,7 +42,7 @@ Use the following CL commands to create the program (PGM) object called SAMPLERP
 Use your browser to access the HTTP Server Configuration and Administration forms to create an Apache server named, 
 for example, RESTSERVER.
         
-* Set the document root to the /rpgdemo/html directory. 
+* Set the document root to the /www/rpgdemo/html directory. 
 * Add a directory for the QSYS library allowing access to the directory and allowing CGI script execution, 
 using the Alias and Redirection form. 
 * Add the directory for the QSYS (RPGDEMO.LIB) library, using the Context Managementform.
@@ -50,10 +50,10 @@ using the Alias and Redirection form.
 ### Check
 Under Tools, select Display Configuration File to make sure you have the following CGI related directives:
 
-        DocumentRoot /rpgdemo/html/
-        Alias /html/ /rpgdemo/html/
+        DocumentRoot /www/rpgdemo/html/
+        Alias /html/ /www/rpgdemo/html/
         ScriptAlias /cgi-bin/ /QSYS.LIB/RPGDEMO.LIB/
-        <Directory /rpgdemo/html/>
+        <Directory /www/rpgdemo/html/>
             AllowOverride None
             Options None
             order allow,deny
