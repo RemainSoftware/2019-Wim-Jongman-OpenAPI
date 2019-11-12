@@ -11,5 +11,7 @@ The service might still be running on the magic box. Try the following links
 * http://magic.magic-ug.org:81/rpgdemo.html (this link provides a form which will pass the data to the RPG program)
 * http://magic.magic-ug.org:81/openapi/samplerpg.pgm (call of the RPG directly with GET)
 
+------
+
 
 [1] https://www.ibm.com/developerworks/community/wikis/home?lang=en#!/wiki/IBM%20i%20Technology%20Updates/page/RPG%20CGI%20programming%20example
