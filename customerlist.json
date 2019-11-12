@@ -1,0 +1,101 @@
+{
+  "openapi" : "3.0.1",
+  "info" : {
+    "title" : "Customer List",
+    "description" : "",
+    "termsOfService" : "https://remainsoftware.com/termsofuser",
+    "contact" : {
+      "name" : "Wim Jongman",
+      "url" : "https://remainsoftware.com/api/doc",
+      "email" : "wim.jongman@remainsoftware.com"
+    },
+    "license" : {
+      "name" : "",
+      "url" : ""
+    },
+    "version" : "1.0.0",
+    "x-restgeninfo" : {
+      "library" : "",
+      "srclibrary" : "",
+      "srcfile" : "",
+      "generate" : "",
+      "object" : ""
+    }
+  },
+  "servers" : [ {
+    "url" : "http://magic.magic-ug.org:81/openapi",
+    "description" : ""
+  } ],
+  "paths" : {
+    "/samplerpg.pgm" : {
+      "summary" : "Here is the data",
+      "post" : {
+        "operationId" : "customerlist",
+        "requestBody" : {
+          "description" : "filter",
+          "content" : {
+            "application/json" : {
+              "schema" : {
+                "$ref" : "#/components/schemas/filter"
+              }
+            }
+          },
+          "required" : true
+        },
+        "responses" : {
+          "200" : {
+            "description" : "OK",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/result"
+                }
+              }
+            }
+          }
+        },
+        "x-lxrgen" : {
+          "library" : "",
+          "srclibrary" : "",
+          "srcfile" : "",
+          "object" : ""
+        }
+      }
+    }
+  },
+  "components" : {
+    "schemas" : {
+      "filter" : {
+        "type" : "object",
+        "properties" : {
+          "name" : {
+            "type" : "string",
+            "description" : "The *name* of the customer that you want to filter."
+          },
+          "state" : {
+            "type" : "string",
+            "description" : "filter by state '*'means all states."
+          }
+        }
+      },
+      "result" : {
+        "type" : "array",
+        "items" : {
+          "$ref" : "#/components/schemas/customer"
+        }
+      },
+      "customer" : {
+        "type" : "object",
+        "properties" : {
+          "address" : {
+            "type" : "string"
+          },
+          "name" : {
+            "type" : "string"
+          }
+        },
+        "description" : "A customer"
+      }
+    }
+  }
+}
