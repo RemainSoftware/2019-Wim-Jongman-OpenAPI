@@ -3,15 +3,13 @@
 ## OpenAPI Your Gateway to Digitial Transformation by Wim Jongman
 In this talk Wim Jongman will show you how easy it is to call an RPG program from a web request.
 
-The complete process was recorded. Please contact Wim if you want to get a link to the full recording.
+Presentation and example source code is in the repository. This talk uses data from the following link[1] which may be dead by the time you read this. The contents of the link is therefore saved. See instructions.MD on how to setup the CGi call to the RPG.
 
-This talk uses data from the following link[1] which may be dead by the time you read this. The contents of the link is therefore saved in this repository.
+## Magic box test
+The service might still be running on the magic box. Try the following links
 
-### Chapter 1 - Open Sesame
-The first step is to create an IBM i Apache Server using the http server administration front-end. The http server administration can be found on
-
-    http://your.ibm.i:2001/HTTPAdmin
-
+* http://magic.magic-ug.org:81/rpgdemo.html (this link provides a form which will pass the data to the RPG program)
+* http://magic.magic-ug.org:81/openapi/samplerpg.pgm (call of the RPG directly with GET)
 
 
 [1] https://www.ibm.com/developerworks/community/wikis/home?lang=en#!/wiki/IBM%20i%20Technology%20Updates/page/RPG%20CGI%20programming%20example
